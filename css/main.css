@@ -851,7 +851,6 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("../img/bubble_01.png") no-repeat center/contain;
     -webkit-transform: translate3d(0, 20rem, 0);
     -moz-transform: translate3d(0, 20rem, 0);
     -ms-transform: translate3d(0, 20rem, 0);
@@ -859,33 +858,26 @@ html, body {
     transform: translate3d(0, 20rem, 0);
 }
 
-.bubble-01 {
-    background-image: url("../img/bubble_01.png");
-}
-
-.bubble-02 {
-    background-image: url("../img/bubble_02.png");
-}
-
-.bubble-03 {
-    background-image: url("../img/bubble_03.png");
-}
-
 .enter-play .bubble-01 {
-    animation: bubble-enter 1.2s ease-out .3s forwards;
+    -webkit-animation: bubble-enter 1.2s ease-out 0.3s forwards;
+    -o-animation: bubble-enter 1.2s ease-out 0.3s forwards;
+    animation: bubble-enter 1.2s ease-out 0.3s forwards;
 }
 
 .enter-play .bubble-02 {
-    animation: bubble-enter 1.2s ease-out .3s forwards;
+    -webkit-animation: bubble-enter 1.2s ease-out 0.3s forwards;
+    -o-animation: bubble-enter 1.2s ease-out 0.3s forwards;
+    animation: bubble-enter 1.2s ease-out 0.3s forwards;
 }
 
 .enter-play .bubble-03 {
-    animation: bubble-enter 1.2s ease-out .5s forwards;
+    -webkit-animation: bubble-enter 1.2s ease-out 0.5s forwards;
+    -o-animation: bubble-enter 1.2s ease-out 0.5s forwards;
+    animation: bubble-enter 1.2s ease-out 0.5s forwards;
 }
 
-@keyframes bubble-enter {
+@-webkit-keyframes bubble-enter {
     0% {
-
     }
     100% {
         -webkit-transform: translate3d(0, 0, 0);
@@ -896,43 +888,47 @@ html, body {
     }
 }
 
-.out-play .bubble-01 {
-    top: 0;
-}
-
-.out-play .bubble-02 {
-    top: 0;
-}
-
-.out-play .bubble-03 {
-    top: 0;
-}
-
 .media {
     position: relative;
-    transform: translate3d(5rem, 2.5rem, 0);
+    -webkit-transform: translate3d(10rem, 2.5rem, 0);
+    -moz-transform: translate3d(10rem, 2.5rem, 0);
+    -ms-transform: translate3d(10rem, 2.5rem, 0);
+    -o-transform: translate3d(10rem, 2.5rem, 0);
+    transform: translate3d(10rem, 2.5rem, 0);
 }
 
 .enter-play .media {
+    -webkit-animation: media-enter 1.2s ease-out forwards;
+    -o-animation: media-enter 1.2s ease-out forwards;
     animation: media-enter 1.2s ease-out forwards;
 }
 
-@keyframes media-enter {
+@-webkit-keyframes media-enter {
     0% {
     }
     100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
 }
 
 .out-play .media {
+    -webkit-animation: media-enter 1.2s ease-out forwards;
+    -o-animation: media-enter 1.2s ease-out forwards;
     animation: media-enter 1.2s ease-out forwards;
 }
 
-@keyframes media-out {
+@-webkit-keyframes media-out {
     0% {
     }
     100% {
+        -webkit-transform: translate3d(5rem, 2.5rem, 0);
+        -moz-transform: translate3d(5rem, 2.5rem, 0);
+        -ms-transform: translate3d(5rem, 2.5rem, 0);
+        -o-transform: translate3d(5rem, 2.5rem, 0);
         transform: translate3d(5rem, 2.5rem, 0);
     }
 }
@@ -952,6 +948,8 @@ html, body {
     width: .86rem;
     height: 1.8rem;
     background: url("../img/line.png") no-repeat bottom center;
+    -webkit-animation: rec-round 2s linear infinite;
+    -o-animation: rec-round 2s linear infinite;
     animation: rec-round 2s linear infinite;
     overflow: hidden;
 }
@@ -961,15 +959,23 @@ html, body {
     height: auto;
 }
 
-@keyframes rec-round {
+@-webkit-keyframes rec-round {
     0% {
     }
     50% {
+        -webkit-transform: rotateY(-180deg) translate3d(0, 0.6rem, 0);
+        -moz-transform: rotateY(-180deg) translate3d(0, 0.6rem, 0);
+        -ms-transform: rotateY(-180deg) translate3d(0, 0.6rem, 0);
+        -o-transform: rotateY(-180deg) translate3d(0, 0.6rem, 0);
         transform: rotateY(-180deg) translate3d(0, 0.6rem, 0);
         height: 1.2rem;
     }
     100% {
         height: 1.8rem;
+        -webkit-transform: rotateY(-360deg) translate3d(0, 0, 0);
+        -moz-transform: rotateY(-360deg) translate3d(0, 0, 0);
+        -ms-transform: rotateY(-360deg) translate3d(0, 0, 0);
+        -o-transform: rotateY(-360deg) translate3d(0, 0, 0);
         transform: rotateY(-360deg) translate3d(0, 0, 0);
     }
 }
