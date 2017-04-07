@@ -51,8 +51,8 @@ function wxConfig(signParm) {
         // config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后
         wx.onMenuShareTimeline({
             title: '格局_一种全新的组织连接方式', // 分享标题
-            link: 'http://gzyueyun.com/m/geju/index.html', // 分享链接
-            imgUrl: 'http://gzyueyun.com/m/geju/img/logo.png', // 分享图标
+            link: 'http://www.gzyueyun.com/m/geju/index.html', // 分享链接
+            imgUrl: 'http://www.gzyueyun.com/m/geju/img/logo.png', // 分享图标
             success: function () {
                 // 用户确认分享后执行的回调函数
             },
@@ -64,8 +64,8 @@ function wxConfig(signParm) {
         wx.onMenuShareAppMessage({
             title: '格局_一种全新的组织连接方式', // 分享标题
             desc: '格局正在帮助开创未来的组织协作,提升沟通效率,让组织管理更简单、高效、安全.', // 分享描述
-            link: 'http://gzyueyun.com/m/geju/index.html', // 分享链接
-            imgUrl: 'http://gzyueyun.com/m/geju/img/logo.png', // 分享图标
+            link: 'http://www.gzyueyun.com/m/geju/index.html', // 分享链接
+            imgUrl: 'http://www.gzyueyun.com/m/geju/img/logo.png', // 分享图标
             type: '', // 分享类型,music、video或link，不填默认为link
             dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
             success: function () {
