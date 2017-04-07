@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>格局_一种全新的组织连接方式</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="//at.alicdn.com/t/font_qj0g8cxtowqgds4i.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <section class="content">
+                    <div class="min-bg">
+                        <img class="logo" src="img/logo.png">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <h2 class="title">格局</h2>
+                    <h3 class="subtitle">连接，从格局开始</h3>
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <section class="content">
+                    <h2 class="title">智能组织管理新变革</h2>
+                    <h3 class="subtitle">随时随地，轻松掌握组织内外新动向</h3>
+                    <div class="polygon">
+                        <div class="min-point">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-mingpian_"></use>
+                            </svg>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-shipin"></use>
+                            </svg>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-xiaoxi"></use>
+                            </svg>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-ditu"></use>
+                            </svg>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-richengzhushou"></use>
+                            </svg>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-gonggao"></use>
+                            </svg>
+                        </div>
+                        <img class="big-img big-img-bottom" src="img/polygon_bottom.png">
+                        <img class="big-img big-img-middle" src="img/polygon_middle.png">
+                        <img class="big-img big-img-top" src="img/polygon_top.png">
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <section class="content">
+                    <h2 class="title">为您提供了协作的一切</h2>
+                    <h3 class="subtitle">互联网时代，连接产生更多价值</h3>
+                    <div class="bubble-group">
+                        <img class="bubble bubble-01" src="img/bubble_01.png">
+                        <img class="bubble bubble-02" src="img/bubble_02.png">
+                        <img class="bubble bubble-03" src="img/bubble_03.png">
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <section class="content">
+                    <h2 class="title">格局正在帮助开创<br>未来的组织协作</h2>
+                    <h3 class="subtitle">提升沟通效率，让组织管理更简单、高效、安全</h3>
+                    <div class="media">
+                        <img src="img/media.png">
+                        <div class="rec">
+                            <img src="img/illustration.png">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="footer">
+            <a class="btn dl-btn" href="http://www.gzyueyun.com/assets/dowload.html">立即下载</a>
+            <div class="arrow">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-up"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/vendor/jquery.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="js/wxapiconfig.js"></script>
+<script src="js/vendor/swiper.jquery.min.js"></script>
+<script src="js/vendor/swiper.animate.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(function () {
+        var swiper = new Swiper('#wrapper .swiper-container', {
+            direction: 'vertical',
+            speed: 1200,
+            onInit: function (swiper) {
+                enterAnimate(swiper);
+            },
+            onSlideChangeStart: function (swiper) {
+                $('.footer .arrow').toggle(swiper.activeIndex < swiper.slides.length - 1);
+
+                outAnimate(swiper);
+                setTimeout(function () {
+                    enterAnimate(swiper);
+                }, 300);
+            },
+            onSlideChangeEnd: function (swiper) {
+//                enterAnimate(swiper);
+            }
+        });
+
+        function enterAnimate(swiper) {
+            var enterClass = 'enter-play',
+                curIndex = swiper.activeIndex;
+            swiper.slides.removeClass(enterClass); // 清除所有状态
+            swiper.slides.eq(curIndex).addClass(enterClass); // 为当前页添加进入状态
+
+            swiper.container.addClass('init-play init-play' + curIndex);
+        }
+
+        function outAnimate(swiper) {
+            var outClass = 'out-play',
+                prevIndex = swiper.previousIndex;
+            swiper.slides.removeClass(outClass); // 清除所有状态
+            swiper.slides.eq(prevIndex).addClass(outClass);
+        }
+    });
+</script>
+</body>
+</html>
