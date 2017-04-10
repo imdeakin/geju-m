@@ -370,7 +370,7 @@ html, body {
     left: -.74rem;
     width: 1.74rem;
     height: 1.58rem;
-    background: url("../assets/img/min_bg_01.png") no-repeat center/cover;
+    background: url("../img/min_bg_01.png") no-repeat center/cover;
     animation: bg-ele-enter .9s .8s linear forwards;
 }
 
@@ -378,7 +378,7 @@ html, body {
     left: 1.32rem;
     width: 1.35rem;
     height: 1.6rem;
-    background: url("../assets/img/min_bg_02.png") no-repeat top center/cover;
+    background: url("../img/min_bg_02.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s .8s linear forwards;
 }
 
@@ -386,7 +386,7 @@ html, body {
     left: 3rem;
     width: 1.45rem;
     height: 1.25rem;
-    background: url("../assets/img/min_bg_03.png") no-repeat top center/cover;
+    background: url("../img/min_bg_03.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s .8s linear forwards;
 }
 
@@ -394,7 +394,7 @@ html, body {
     left: 5.48rem;
     width: 1.84rem;
     height: 1.35rem;
-    background: url("../assets/img/min_bg_04.png") no-repeat top center/cover;
+    background: url("../img/min_bg_04.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s 1.2s linear forwards;
 }
 
@@ -402,7 +402,7 @@ html, body {
     left: 8rem;
     width: 1.47rem;
     height: 1.78rem;
-    background: url("../assets/img/min_bg_05.png") no-repeat top center/cover;
+    background: url("../img/min_bg_05.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s 1.2s linear forwards;
 }
 
@@ -410,7 +410,7 @@ html, body {
     left: 9.8rem;
     width: 1.32rem;
     height: 1.28rem;
-    background: url("../assets/img/min_bg_06.png") no-repeat top center/cover;
+    background: url("../img/min_bg_06.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s 1.4s linear forwards;
 }
 
@@ -419,7 +419,7 @@ html, body {
     left: .22rem;
     width: 1.76rem;
     height: 1.51rem;
-    background: url("../assets/img/min_bg_07.png") no-repeat top center/cover;
+    background: url("../img/min_bg_07.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s .8s linear forwards;
 }
 
@@ -428,7 +428,7 @@ html, body {
     left: 2.68rem;
     width: .94rem;
     height: .94rem;
-    background: url("../assets/img/min_bg_08.png") no-repeat top center/cover;
+    background: url("../img/min_bg_08.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s .8s linear forwards;
 }
 
@@ -437,7 +437,7 @@ html, body {
     left: 2.3rem;
     width: 1.23rem;
     height: .96rem;
-    background: url("../assets/img/min_bg_09.png") no-repeat top center/cover;
+    background: url("../img/min_bg_09.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s 1s linear forwards;
 }
 
@@ -446,7 +446,7 @@ html, body {
     left: 6.38rem;
     width: 1.19rem;
     height: 1.04rem;
-    background: url("../assets/img/min_bg_10.png") no-repeat top center/cover;
+    background: url("../img/min_bg_10.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s 1s linear forwards;
 }
 
@@ -455,7 +455,7 @@ html, body {
     left: 6.98rem;
     width: .82rem;
     height: .82rem;
-    background: url("../assets/img/min_bg_11.png") no-repeat top center/cover;
+    background: url("../img/min_bg_11.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s 1s linear forwards;
 }
 
@@ -464,7 +464,7 @@ html, body {
     left: 7.94rem;
     width: 1.12rem;
     height: 1.45rem;
-    background: url("../assets/img/min_bg_12.png") no-repeat top center/cover;
+    background: url("../img/min_bg_12.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s 1.2s linear forwards;
 }
 
@@ -473,7 +473,7 @@ html, body {
     left: 9.48rem;
     width: 1.73rem;
     height: 1.62rem;
-    background: url("../assets/img/min_bg_13.png") no-repeat top center/cover;
+    background: url("../img/min_bg_13.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s 1.2s linear forwards;
 }
 
@@ -482,7 +482,7 @@ html, body {
     left: -.06rem;
     width: 1.74rem;
     height: 1.43rem;
-    background: url("../assets/img/min_bg_14.png") no-repeat top center/cover;
+    background: url("../img/min_bg_14.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s 1.4s linear forwards;
 }
 
@@ -491,7 +491,7 @@ html, body {
     left: 2.2rem;
     width: 1.23rem;
     height: 1.23rem;
-    background: url("../assets/img/min_bg_15.png") no-repeat top center/cover;
+    background: url("../img/min_bg_15.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s .8s linear forwards;
 }
 
@@ -500,7 +500,7 @@ html, body {
     left: 4.22rem;
     width: 1.83rem;
     height: 1.25rem;
-    background: url("../assets/img/min_bg_16.png") no-repeat top center/cover;
+    background: url("../img/min_bg_16.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s .8s linear forwards;
 }
 
@@ -509,7 +509,7 @@ html, body {
     left: 6.4rem;
     width: 1.86rem;
     height: 1.14rem;
-    background: url("../assets/img/min_bg_17.png") no-repeat top center/cover;
+    background: url("../img/min_bg_17.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s 1s linear forwards;
 }
 
@@ -518,7 +518,7 @@ html, body {
     left: 9.18rem;
     width: 1.31rem;
     height: 1.76rem;
-    background: url("../assets/img/min_bg_18.png") no-repeat top center/cover;
+    background: url("../img/min_bg_18.png") no-repeat top center/cover;
     animation: bg-ele-enter .9s 1s linear forwards;
 }
 
@@ -749,7 +749,7 @@ html, body {
     right: 3.64rem;
     width: .85rem;
     height: 1rem;
-    background: url("../assets/img/line.png") no-repeat bottom center;
+    background: url("../img/line.png") no-repeat bottom center;
     animation: rec-round 2s linear infinite;
 }
 

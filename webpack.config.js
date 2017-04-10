@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     //页面入口文件配置
@@ -31,8 +32,21 @@ module.exports = {
     plugins: [
         new CopyWebpackPlugin([{
             from: __dirname + '/src/assets',
-            to: __dirname + '/dist'
+            to: __dirname + '/dist',
+            ignore: '.gitignore'
         }]),
-        new ExtractTextPlugin("/css/[name].css")
+        new ExtractTextPlugin("/css/[name].css"),
+        new HtmlWebpackPlugin({
+            title: '',
+            filename: 'index.html',
+            template: __dirname + '/src/app/index.html',
+            inject: 'body',
+            favicon: __dirname + '/src/assets/favicon.ico',
+            minify: false,
+            hash: false,
+            cache: false,
+            showErrors: false,
+            xhtml: false
+        })
     ]
 };
