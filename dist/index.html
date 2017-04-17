@@ -111,6 +111,11 @@
             </div>
         </div>
     </div>
+    <div class="weixin-tip">
+        <p>
+            <img src="img/live_weixin.png" alt="微信打开"/>
+        </p>
+    </div>
 </div>
 <script src="js/vendor/jquery.min.js"></script>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
@@ -151,6 +156,25 @@
             swiper.slides.removeClass(outClass); // 清除所有状态
             swiper.slides.eq(prevIndex).addClass(outClass);
         }
+
+        function is_weixin() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        $('.dl-btn').click(function (e) {
+            var isWeixin = is_weixin();
+            if (isWeixin) {
+                e.preventDefault();
+                $(".weixin-tip").show();
+            } else {
+
+            }
+        });
     });
 </script>
 </body>
